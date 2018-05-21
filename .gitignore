@@ -3,3 +3,8 @@
 # Log file
 *.log
 
+
+.idea
+
+node_modules
+dist
