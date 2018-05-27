@@ -1,14 +1,14 @@
-/*=========
-*页面样式
- =========*/
-
-/*=========
- 基本默认值
- ========= */
+/*=========  Default Style ========= */
 
 html {
     font-size: 62.5%;
     color: #222;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
 }
 
 ::selection {
@@ -25,9 +25,29 @@ li {
     list-style: none;
 }
 
-/*=========
- 工具样式
- ========= */
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+h1, h2, div, p {
+    letter-spacing: 1px;
+}
+
+/*========= Tool Style ========= */
 
 /*任何一个元素加上center-block就可以在父元素中居中显示*/
 .center-block {
@@ -86,9 +106,27 @@ li {
     clear: both;
 }
 
-/*=========
- 浏览器更新提示
- ========= */
+.clearfix {
+    zoom: 1;
+}
+
+.hr {
+    width: 100%;
+    margin: 0rem auto;
+    height: 0.5rem;
+}
+
+/*========= customize header========= */
+header {
+    width: 100%;
+}
+
+.call {
+    width: 2em;
+    height: 2rem;
+    line-height: 1;
+    vertical-align: middle;
+}
 
 .browserupgrade {
     margin: 0;
@@ -96,23 +134,133 @@ li {
     background: #ccc;
 }
 
-/*=========
- 自定义页面样式
- ========= */
-
-body {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    background-color: #f7f7f7;
+header .top {
+    line-height: 3rem;
+    padding: 0 0 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
 }
 
-a {
-    color: #666;
+header .main {
+    padding: 0;
+}
+
+header .main .brand {
+    float: left;
+    padding: 1rem 0 0 0;
+}
+
+header .main .brand  img{
+   height: 2rem;
+}
+
+header .main ul {
+    text-align: right;
+}
+
+header .main ul li {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: -3px;
+    /*background: red;*/
+}
+
+header .main ul li + li {
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a {
+    display: inline-block;
+    padding: 0 2rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
     text-decoration: none;
 }
 
-a:hover, a:active {
-    color: #0ae;
-    text-decoration: underline;
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active {
+    color: #ffb300;
+    background-color: #f8f6f1;
 }
+
+/*========= customize container========= */
+.container {
+    width: 100%;
+}
+
+.service {
+    background: #1fcf7e;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.container .service .wrapper {
+    margin: 0 auto;
+}
+
+.container h2 {
+    margin: 0;
+}
+
+.wrapper .hr {
+    width: 12%;
+    background: #46c562;
+
+}
+
+.sub-heading {
+    line-height: 3rem;
+    margin: 3rem 0;
+    font-size: 2rem;
+    padding: 0 4rem;
+}
+
+.service-detail {
+    background: #2a2d32;
+    color: #fff;
+}
+
+.service-detail-info > div {
+    float: left;
+}
+
+.service-detail .img-section {
+    width: 50%;
+}
+
+.service-detail .text-section {
+    width: 50%;
+}
+
+.img-section img {
+    width: 100%;
+}
+
+.text-section {
+    position: relative;
+    top: 0.7rem;
+    left: 3.3rem;
+}
+
+.s1-item ul {
+    float: left;
+    margin-left: 9rem;
+    margin-top: -2rem;
+
+}
+
+.s1-item ul li {
+    list-style: circle;
+}
+
+/*========= customize footer========= */
+footer {
+    width: 100%;
+}
+
 

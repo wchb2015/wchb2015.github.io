@@ -1,8 +1,9 @@
 /* TEAM */
 
     Developer: chongbeiwang
-
+    Email: wchb20155@gmail.com
 
 /* THANKS */
 
     Site: https://wchb7.com
+    Email: wchb20155@gmail.com
