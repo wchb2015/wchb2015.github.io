@@ -121,13 +121,6 @@ header {
     width: 100%;
 }
 
-.call {
-    width: 2em;
-    height: 2rem;
-    line-height: 1;
-    vertical-align: middle;
-}
-
 .browserupgrade {
     margin: 0;
     padding: 1rem;
@@ -230,7 +223,7 @@ header .main ul li a.active {
 }
 
 .service-detail .img-section {
-    width: 50%;
+    width: 40%;
 }
 
 .service-detail .text-section {
