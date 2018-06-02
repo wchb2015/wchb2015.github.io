@@ -1,24 +1,32 @@
-/*=========  Default Style ========= */
+/* ----------------------------------------------- */
+/* Default Style */
+/* ----------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 html {
     font-size: 62.5%;
     color: #222;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.5;
     background-color: #f7f7f7;
+    overflow-x: hidden;
+
 }
 
 ::selection {
     background-color: #b3d4fc;
     text-shadow: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 li {
@@ -47,7 +55,13 @@ h1, h2, div, p {
     letter-spacing: 1px;
 }
 
-/*========= Tool Style ========= */
+section {
+    padding: 8rem 0;
+}
+
+/* ----------------------------------------------- */
+/* Tool Style */
+/* ----------------------------------------------- */
 
 /*任何一个元素加上center-block就可以在父元素中居中显示*/
 .center-block {
@@ -88,17 +102,9 @@ h1, h2, div, p {
     visibility: hidden;
 }
 
-.text-hide {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
-}
-
 .clearfix:before,
 .clearfix:after {
-    content: " ";
+    content: "";
     display: table;
 }
 
@@ -110,150 +116,216 @@ h1, h2, div, p {
     zoom: 1;
 }
 
-.hr {
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0rem auto;
-    height: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
-/*========= customize header========= */
-header {
-    width: 100%;
-}
-
-.browserupgrade {
+.browser-upgrade {
     margin: 0;
     padding: 1rem;
     background: #ccc;
 }
 
-header .top {
+h2:after {
+    display: block;
+    height: 0.2rem;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 3rem auto 0 auto;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+}
+
+img {
+    /*vertical-align: bottom;*/
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+/* ----------------------------------------------- */
+/* header */
+/* ----------------------------------------------- */
+header {
+    width: 100%;
+}
+
+header .header-first {
     line-height: 3rem;
     padding: 0 0 0 1.5rem;
     color: #fff;
-    background: #555;
+    background: #2ecc71;
     border-bottom: 1px #ecc000 solid;
 }
 
-header .main {
+header .header-second {
+    overflow: hidden;
+    line-height: 10rem;
+    height: 10rem;
+}
+
+header .header-second .logo {
+    float: left;
     padding: 0;
 }
 
-header .main .brand {
-    float: left;
-    padding: 1rem 0 0 0;
-}
-
-header .main .brand img {
-    height: 2rem;
-}
-
-header .main ul {
+header .header-second ul {
     text-align: right;
+    margin-right: 2rem;
 }
 
-header .main ul li {
+header .header-second ul li {
     display: inline-block;
-    font-size: 1.6rem;
-    margin-left: -3px;
     /*background: red;*/
 }
 
-header .main ul li + li {
+header .header-second ul li + li {
     border-left: 1px solid #f0ede9;
 }
 
-header .main ul li a {
+header .header-second ul li a {
     display: inline-block;
     padding: 0 2rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
-    color: #7c7a65;
+    color: #130808;
     text-decoration: none;
 }
 
-header .main ul li a:hover,
-header .main ul li a:active,
-header .main ul li a.active {
+header .header-second ul li a:hover,
+header .header-second ul li a:active,
+header .header-second ul li a.active {
     color: #ffb300;
     background-color: #f8f6f1;
 }
 
-/*========= customize container========= */
-.container {
-    width: 100%;
+/* ----------------------------------------------- */
+/* banner */
+/* ----------------------------------------------- */
+
+.banner {
+    background-image: url("../img/bg-l.jpg");
+    height: 70vh;
+    background-size: cover;
 }
 
-.service {
-    background: #1fcf7e;
-    color: #fff;
+/* ----------------------------------------------- */
+/* service */
+/* ----------------------------------------------- */
+
+h2 {
+    font-size: 180%;
+    word-spacing: 0.2rem;
     text-align: center;
-    padding: 100px 0px;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
 }
 
-.container .service .wrapper {
-    margin: 0 auto;
+.s-service .long-copy {
+    margin-bottom: 3rem;
 }
 
-.container h2 {
-    margin: 0;
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
 }
 
-.wrapper .hr {
-    width: 12%;
-    background: #46c562;
-
-}
-
-.sub-heading {
-    line-height: 3rem;
-    margin: 3rem 0;
-    font-size: 2rem;
-    padding: 0 4rem;
-}
-
-.service-detail {
-    background: #2a2d32;
-    color: #fff;
-}
-
-.service-detail-info > div {
-    float: left;
-}
-
-.service-detail .img-section {
+.text-section {
     width: 40%;
+    padding-left: 1.5rem;
 }
 
-.service-detail .text-section {
+.img-section {
     width: 50%;
 }
 
 .img-section img {
     width: 100%;
+
 }
 
-.text-section {
-    position: relative;
-    top: 0.7rem;
-    left: 3.3rem;
-}
-
-.s1-item ul {
+.text-section ul {
     float: left;
-    margin-left: 9rem;
-    margin-top: -2rem;
-
+    margin-left: 3rem;
 }
 
-.s1-item ul li {
+.text-section ul li {
     list-style: circle;
 }
 
-/*========= customize footer========= */
-footer {
-    width: 100%;
+.s-row0 {
+    background: #2ecc71;
 }
 
+.s-row1 {
+    background: #1abc9c;
+
+}
+
+.s-row2 {
+    background: #3498db;
+
+}
+
+.s-row3 {
+    background: #9b59b6;
+
+}
+
+.s-row4 {
+    background: #16a085;
+
+}
+
+.s-row5 {
+    background: #8e44ad;
+
+}
+
+.s-row6 {
+    background: #1abc9c;
+
+}
+
+/* ----------------------------------------------- */
+/* mission */
+/* ----------------------------------------------- */
+
+.box {
+    padding: 1%;
+}
+
+/* ----------------------------------------------- */
+/* faq */
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* contact */
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* footer */
+/* ----------------------------------------------- */
+
+#google-map-small {
+
+    height: 40rem;
+
+    border-radius: 3rem;
+}
+
+footer {
+    width: 100%;
+
+}
 
