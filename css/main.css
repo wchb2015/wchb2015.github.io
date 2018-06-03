@@ -51,12 +51,26 @@ img {
     vertical-align: bottom;
 }
 
+h2:after {
+    display: block;
+    height: 0.2rem;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 2rem auto 0 auto;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
 h1, h2, h3, div, p {
     letter-spacing: 1px;
 }
 
 section {
-    padding: 3rem 0;
+    /*padding: 3rem 0;*/
 }
 
 /* ----------------------------------------------- */
@@ -116,35 +130,10 @@ section {
     zoom: 1;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
-}
-
 .browser-upgrade {
     margin: 0;
     padding: 1rem;
     background: #ccc;
-}
-
-h2:after {
-    display: block;
-    height: 0.2rem;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 3rem auto 0 auto;
-}
-
-h3 {
-    margin-bottom: 1.5rem;
-}
-
-img {
-    /*vertical-align: bottom;*/
 }
 
 .m0 {
@@ -154,6 +143,21 @@ img {
 /* ----------------------------------------------- */
 /* header */
 /* ----------------------------------------------- */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999;
+}
+
+.fix-top {
+    margin-top: 13rem;
+}
+
 header {
     width: 100%;
 }
@@ -212,22 +216,33 @@ header .header-second ul li a.active {
 /* banner */
 /* ----------------------------------------------- */
 
+.s-banner {
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
+}
+
 .banner {
     background-image: url("../img/bg-l.jpg");
     height: 70vh;
     background-size: cover;
+    /*background-attachment: fixed;*/
 }
 
 /* ----------------------------------------------- */
 /* service */
 /* ----------------------------------------------- */
 
+.s-service {
+    padding-top: 3rem;
+    background: #2ecc71;
+
+}
+
 h2 {
     font-size: 180%;
     word-spacing: 0.2rem;
     text-align: center;
-    margin-bottom: 3rem;
-    letter-spacing: 1px;
+    margin-bottom: 2rem;
 }
 
 .s-service .long-copy {
@@ -242,7 +257,8 @@ h2 {
 
 .text-section {
     width: 40%;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
 }
 
 .img-section {
@@ -257,6 +273,7 @@ h2 {
 .text-section ul {
     float: left;
     margin-left: 3rem;
+    margin-top: 1.5rem;
 }
 
 .text-section ul li {
@@ -264,7 +281,6 @@ h2 {
 }
 
 .s-row0 {
-    background: #2ecc71;
 }
 
 .s-row1 {
@@ -294,12 +310,16 @@ h2 {
 
 .s-row6 {
     background: #1abc9c;
-
 }
 
 /* ----------------------------------------------- */
 /* mission */
 /* ----------------------------------------------- */
+
+.s-mission {
+    padding-top: 3rem;
+    background: #27ae60;
+}
 
 .box {
     padding: 1%;
@@ -309,19 +329,53 @@ h2 {
 /* faq */
 /* ----------------------------------------------- */
 
+.s-faq {
+    background: #ecf0f1;
+    padding-top: 3rem;
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+.s-faq {
+    padding: 0 2rem;
+}
+
+.s-faq ul li {
+    list-style: circle;
+    margin-left: 3rem;
+}
+
 /* ----------------------------------------------- */
 /* contact */
 /* ----------------------------------------------- */
+
+.s-contact {
+    background: #bdc3c7;
+}
+
+.s-contact img {
+    margin-bottom: 2rem;
+    border-radius: 12%;
+}
+
+.mt {
+    margin-top: 2rem;
+}
+
+.pt {
+    padding-top: 2rem;
+}
 
 /* ----------------------------------------------- */
 /* footer */
 /* ----------------------------------------------- */
 
 #google-map-small {
-
-    height: 40rem;
-
+    height: 27rem;
     border-radius: 3rem;
+
 }
 
 footer {
