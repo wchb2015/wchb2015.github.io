@@ -21,7 +21,6 @@ body {
     line-height: 1.5;
     background-color: #f7f7f7;
     overflow-x: hidden;
-
 }
 
 ::selection {
@@ -133,7 +132,7 @@ section {
 .browser-upgrade {
     margin: 0;
     padding: 1rem;
-    background: #ccc;
+    background: #7ecc17;
 }
 
 .m0 {
@@ -178,7 +177,7 @@ header .header-second {
 
 header .header-second .logo {
     float: left;
-    padding: 0;
+    padding: 0 0 0 3rem;
 }
 
 header .header-second ul {
@@ -226,6 +225,10 @@ header .header-second ul li a.active {
     height: 70vh;
     background-size: cover;
     /*background-attachment: fixed;*/
+}
+
+.s-banner-small {
+    display: none;
 }
 
 /* ----------------------------------------------- */
@@ -386,5 +389,40 @@ footer {
     width: 100%;
     padding: 5rem 0 3rem;
     background-color: #7f8c8d;
+}
+
+@media only screen and (max-width: 32em) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    #google-map-small {
+        margin-top: 2rem;
+    }
+
+    .s-banner-small {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 52em) {
+    .s-banner, .header-second {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    .s-contact .span-1-of-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 32em) {
+    .s-row1 .text-section,
+    .s-row3 .text-section,
+    .s-row5 .text-section {
+        float: right;
+    }
 }
 
