@@ -406,7 +406,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 52em) {
+@media only screen and (max-width: 64em) {
     .s-banner, .header-second {
         display: none;
     }
